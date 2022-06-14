@@ -5,19 +5,45 @@
 
 
 @media screen and (max-width: 1024px) {
-  footer {
-    width: 100%;
-    height: 650px;
-  }
+
+  .footer_all {
+      height: 860px;
+    }
 }
   
 
 
 @media screen and (max-width: 768px) {
 
+  /*TOP_ttl共通*/
+  .top {
+      display: block;
+      position: relative;
+    }
+  
+    .top_ttl {
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 80px;
+      text-align: center;
+      font-size: 50px;
+    }
+  
+    .top_ttl h1 {
+      display: inline-block;
+      width: initial;
+      background-color: #fff;
+      padding: 0 20px;
+    }
+  
+    .top_img {
+      width: 100%;
+  
+    }
 
-  /*TOPのレスポンシブ*/
-
+  /*header共通*/
 
   header {
     height: 100px;
@@ -96,166 +122,14 @@
     transform: rotate(45deg);
   }
 
-  .top .top_img {
-    width: initial;
-  }
+  /*Footer共通*/
 
-  .inner {
-    max-width: 95%;
-    margin: 0 auto;
-  }
-
-  .about {
-    width: 100%;
-    height: 600px;
-  }
-
-  .about_wrap {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 450px;
-  }
-
-  .about_img {
-    position: absolute;
-    left: 3%;
-    top: 20px;
-  }
-
-  .about_wrap .about_txt .about_ttl h3 {
-    font-size: 30px;
-    position: absolute;
-    right: 9%;
-    top: 100px;
-  }
-
-  .about_wrap .about_txt .about_ttl::after {
-    position: absolute;
-    width: 200px;
-    right: 14%;
-    top: 160px;
-  }
-
-  .about_wrap .about_txt p {
-    position: absolute;
-    padding: 10px 10% 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    line-height: 1.8;
-    top: 300px;
-  }
-
-  .feature {
-    height: 1350px;
-  }
-
-  .top_ttl {
-    width: initial;
-  }
-
-  .about_com_all {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .about_com_item {
-    display: block;
-    width: auto;
-    margin-bottom: 60px;
-  }
-
-  .about_com_list {
-    width: initial;
-  }
-
-  .about_com_txt {
-    font-size: 30px;
-  }
-
-  .about_com_ttl::after {
-    display: none;
-  }
-
-  .about_com_ttl {
-    border-bottom: solid 2px rgb(224, 156, 156);
-    width: 100px;
-    padding: 0;
-    margin-bottom: 30px;
-  }
-
-  .about_mem .inner {
-    max-width: 95%;
-  }
-
-  .about_mem_all {
-    display: block;
-    text-align: center;
-  }
-
-  .about_mem_per {
-    width: 100%;
-    margin: 0 0 50px;
-  }
-
-  .about_mem_ttl::before {
-    display: none;
-  }
-
-  .about_mem_ttl {
-    position: initial;
-    border-bottom: solid 2px #75a9ff;
-    width: 200px;
-    margin: 0 auto 20px;
-  }
-
-  .about_mem_name {
-    margin-bottom: 10px;
+  .footer_all {
+    height: 500px;
   }
 
 
 
-  .feature_wrap {
-    width: 100%;
-    padding: 0;
-  }
-  .feature_list {
-    display: block;
-  }
-
-  .feature_item {
-    width: 100%;
-    height: 750px;
-    margin: 0 0 40px;
-    text-align: center;
-  }
-
-  .feature_ttl {
-    font-size: 40px;
-  }
-
-  .feature_content {
-    font-size: 20px;
-    margin-top: 20px;
-  }
-
-  .feature_content::after {
-    right: 2px;
-    width: 30%;
-    height: 60%;
-  }
-
-  .contact_form_ttl::after {
-    border: none;
-    width: initial;
-    right: 5%;
-  }
-
-  .contact_box {
-    margin-bottom: 50px;
-  }
 }
 
 
@@ -264,332 +138,87 @@
 
 
 @media screen and (max-width: 480px) {
-  .inner {
-    max-width: 95%;
-  }
 
-  header {
-    display: block;
-    height: 85px;
-  }
-
-  header .logo img {
-    width: 60%;
-    height: 50px;
-  }
-
-  header .logo {
-    padding: 5px 0;
-  }
-
+  /*header共通*/
   header .drawer {
-    border-top: solid 10px #000;
-    width: 40px;
     top: 3%;
-    right: 4%;
   }
 
-  header .drawer::before,
-  header .drawer::after {
-    width: 40px;
-    height: 10px;
+  .header_all a img {
+    padding: 5% 3% 0;
   }
 
-  header .drawer::before {
-    top: 5px;
+  .section_ttl {
+    padding: 0;
   }
-    
-  header .drawer::after {
-    top: 20px;
-  }
-
-  body.nav-open header .drawer::before {
-    top: 10px;
-  }
-    
-  body.nav-open header .drawer::after {
-    top: 10px;
-  }
-
-  .top .top_img {
-    text-align: center;
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-
-  .top .top_img img {
-    width: 80%;
-  }
-
-  .top .top_img .subtext {
-    font-size: 20px;
-    margin: 0;
-  }
-
-  .top_bg {
-    min-height: 640px;
-  }
-
-  .section {
-    margin-top: 20px;
-  }
-
   .section_ttl h2 {
-    padding-top: 0;
-  }
-
-  .about {
-    height: auto;
-  }
-
-  .about_wrap {
-    height: 500px;
-    padding: 0;
-  }
-
-  .about_img {
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-
-  }
-
-  .about_img img {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .about_wrap .about_txt .about_ttl h3 {
-    top: 250px;
-    left: 0;
-    right: 0;
-    margin: auto;
     text-align: center;
   }
 
-  .about_wrap .about_txt .about_ttl::after {
-    top: 300px;
-    width: 70%;
-    left: 0;
+  .section_ttl small {
+    width: initial;
+  }
+
+  /*footer共通*/
+
+  .footer_all {
+    height: 850px;
+    position: relative;
+  }
+
+
+  .footer_contents {
+    display: block;
+    position: absolute;
+    top: 100px;
     right: 0;
-    margin: auto;
-  }
-
-  .about_wrap .about_txt p {
-    top: 330px;
-    padding: 0 5%;
-    text-align: center;
-  }
-
-  .feature {
-    height: auto;
-  }
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 0 10px;
     
-  .feature_txt {
-    padding: 0 5% 30px;
-    text-align: center;
   }
-
-  .feature_txt p {
-    padding: 0;
-  }
-  .feature_wrap {
-    display: block;
-  }
-
-  .feature_wrap .feature_item {
-    width: 100%;
-    margin: 0;
-    height: auto;
-    margin-bottom: 40px;
-  }
-
-  .feature_wrap .feature_item .feature_img {
-    height: 263px;
-  }
-
-  .feature_wrap .feature_item h3 {
-    font-size: 25px;
-    padding: 14px 0;
-  } 
-
-  .feature_wrap .feature_item p {
-    font-size: 20px;
-    line-height: 1.3em;
+  
+  .footer_contents ul {
+    border: none;
+    width: initial;
     padding-bottom: 20px;
+    text-align: right;
+    line-height: 2;
+    border-bottom: 2px solid #333;
   }
 
-  .arrow img {
-    width: 200px;
-    height: auto;
-    top: 0;
+
+  .footer_sns {
+    position: absolute;
+    top: 550px;
     right: 0;
   }
-
-  .service {
-    height: auto;
-  }
-
-  .service_txt {
-    padding: 0 5% 30px;
-    text-align: center
-  }
-
-  .service_txt p {
-    padding: 0;
-  }
   
-  .service_item {
-    height: auto;
-    display: block;
+  .footer_sns {
+    border-left: 2px solid #333;
+    border-bottom: 2px solid #333;
   }
 
-  .service_wrap .service_item p {
-    font-size: 13px;
+  .footer_contents ul:first-child {
+    border-left: none;
   }
 
-  .service_wrap {
-    padding: 0;
+  .footer_contents ul:last-child {
+    border: none;
   }
 
-  .service_item .service_item_img {
-    width: 70%;
-    padding: 15px 0 0;
-    margin: 0 auto;
-  }
-
-  .service_wrap .service_item p {
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-
-  footer {
-    height: 329px;
-  }
-
-  .footer_logo {
-    width: 40%;
-  }
-  
-  .footer_item {
-    padding-right: 7px;
-    margin-right: 7px;
-  }
-
-
-  /*ABOUTのレスポンシブ*/
-
-  .top_ttl {
-    width: 100%;
-    text-align: center;
+  .footer_txt {
+    position: absolute;
+    top: 800px;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 
-  .top_ttl h1 {
-    font-size: 74px;
+  .footer_contents ul li {
+    font-size: 20px;
   }
 
-  .top_ttl p {
-    position: initial;
-  }
 
-  .about_com_all {
-    width: 100%;
-    padding: 25px 0 0;
-  }
 
-  .about_com_list {
-    padding: 0 5%;
-  }
-  .about_com_txt {
-    font-size: 23px;
-  }
-
-  .about_mem_all {
-    padding: 25px 5% 0;
-  }
-
-  .about_acc {
-    margin: 0;
-  }
-
-  .about_acc_map {
-    display: block;
-    width: 100%;
-    clip-path: initial;
-    top: -30px;
-  }
-
-  .about_acc_list {
-    position: initial;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .about_acc_ttl {
-    width: 100px;
-    margin: 0 auto 20px;
-    border-bottom: rgb(67, 194, 38) solid 2px;
-    padding-bottom: 2px;
-  }
-
-  /*FEATUREのレスポンシブ*/
-
-  .feature_wrap .feature_item {
-    height: 590px;
-  }
-
-  .feature_content::after {
-    width: 50%;
-    right: 0;
-  }
-
-  .feature_ttl {
-    padding-top: 20px;
-  }
-
-  /*SERVICEのレスポンシブ*/
-
-  .service_img {
-    margin-bottom: 20px;
-  }
-
-  /*CONTACTのレスポンシブ*/
-
-  .contact_item .contact_txt {
-    text-align: center;
-    font-size: 15px;
-  }
-
-  .contact_box {
-    display: block;
-  }
-
-  .contact_form_box1 {
-    width: 90%;
-  }
-
-  .contact_form_box2 {
-    width: 87%;
-  }
-
-  .contact_form_ttl::after {
-    right: -70px;
-    border: 1px solid #c72930;
-    padding: 0 5px;
-  }
-
-  .contact_textarea {
-    width: 86%;
-    margin-bottom: 0;
-  }
-}
+ }

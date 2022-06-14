@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>プログラミング教材「CODESTAR」</title>
+  <title>インテリアプロダクト</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="確認テストのページです">
   <link rel="icon" href="../favicon.ico">
@@ -22,47 +22,48 @@
 <body>
   <header>
     <div class="header_all">
-      <a href="index.html" class="logo">
-        <img src="../img/logo.png" alt="ロゴ画像">
+      <a href="../index.html" class="logo">
+        <img src="../img2/logo.png" alt="ロゴ画像">
       </a>
       <nav class="nav_bar">
         <ul>
-          <li><a href="../index.html">TOP</a></li>
-          <li><a href="../html/about.html">ABOUT<small>会社概要</small></a></li>
-          <li><a href="../html/feature.html">FEATURE<small>特徴</small></a></li>
-          <li><a href="../html/service.html">SERVICE<small>事業内容</small></a></li>
+          <li><a href="../index.html">TOP<small>トップ</small></a></li>
+          <li><a href="shop.html">FEATURE<small>商品詳細</small></a></li>
+          <li><a href="shop.html">SHOP<small>商品購入</small></a></li>
+          <li><a href="company.html">COMPANY<small>会社概要</small></a></li>
         </ul>
       </nav>
     </div>
     <p class="drawer"></p>
   </header>
   <main>
-    <section class="top">
-      <div class="top_bg">
-        <div class="top_ttl">
-          <h1>CONTACT</h1>
-          <p>お問い合わせ</p>
-        </div>
-      </div>
-    </section>
-    <section class="breadcrumb">
-      <ul>
-        <li>
-          <a href="../index.html"><span>HOME</span></a>
-        </li>
-        <li>
-          <a href="contact.html"><span class="color">CONTACT</span></a>
+  <section class="top">
+    <div class="top_img">
+      <img src="../img2/contact_top.png" alt="トップ画像">
+    </div>
+    <div class="top_ttl">
+      <h1>CONTACT</h1>
+    </div>
+  </section>
+  <section class="breadcrumb">
+    <ul>
+      <li>
+        <a href="../index.html"><span>HOME</span></a>
+      </li>
+      <li>
+        <a href="company.html"><span class="color">CONTACT</span></a>
         </li>
       </ul>
     </section>
     <section class="contact">
       <div class="inner">
-        <div class="section_ttl">
-          <h2>Contact<small>お問い合わせ</small></h2>
-        </div>
+      <div class="section_ttl">
+        <h2>CONTACT<small>お問い合わせ</small></h2>
+      </div>
         <div class="contact_item">
           <p class="contact_txt">
-            弊社にご興味/関心をいただき、誠にありがとうございます。制作/運用料金などの見積もり、サービスに関するご相談など、気軽にお問い合わせください。弊社の担当者が内容の確認後、ご連絡させて頂きます。下記よりお問い合わせ項目をご記入ください。
+            弊社にご興味/関心をいただき、誠にありがとうございます。<br>
+            制作料金などの見積もり、商品に関するご相談など、気軽にお問い合わせください。弊社の担当者が内容の確認後、ご連絡させて頂きます。下記よりお問い合わせ項目をご記入ください。
           </p>
         </div>
         <form action="#" class="contact_form" id="form">
@@ -70,9 +71,12 @@
             <label for="name" class="contact_form_ttl">お問い合わせ項目</label>
             <select name="subject" class="contact_form_box1" required="required">
               <optgroup value>
-                <option class="select_with" value="プルダウンメニューでお問い合わせ内容を選択" hidden>お問い合わせ内容を選択</option>
-                <option class="select_with" value="サイト制作/運用の見積もり">サイト制作/運用の見積もり</option>
-                <option class="select_with" value="システム制作/運用の見積もり">システム制作/運用の見積もり</option>
+                <option value="select_with" value="プルダウンメニューで問い合わせ内容を選択" hidden>お問い合わせ内容を選択</option>
+                <option class="select_with" value="商品に対するお問い合わせ">商品に対するお問い合わせ</option>
+                <option class="select_with" value="イベントに関するお問い合わせ">イベントに関するお問い合わせ
+                </option>
+                <option class="select_with" value="インテリアに関してのお問い合わせ">インテリアに関してのお問い合わせ
+                </option>
                 <option class="select_with" value="その他">その他</option>
               </optgroup>
             </select>
@@ -83,11 +87,17 @@
           </div>
           <div class="contact_box">
             <label for="email" class="contact_form_ttl">メールアドレス</label>
-            <input type="email" class="contact_form_box2" name="" required="required" placeholder="例）example@example.com" id="email">
+            <input type="email" class="contact_form_box2" name="" required="required" placeholder="例）example@example.com"
+              id="email">
+          </div>
+          <div class="contact_box">
+            <label for="tel" class="contact_form_ttl">電話番号</label>
+            <input type="tel" class="contact_form_box2" name="" required="required" placeholder="例）090-0000-0000" id="tel">
           </div>
           <div class="contact_box area">
             <label for="message" class="contact_form_ttl">お問い合わせ内容</label>
-            <textarea name="messege" class="contact_textarea" id="message" cols="30" rows="10" required="required" placeholder="お問い合わせ内容をご入力ください"></textarea>
+            <textarea name="message" class="contact_textarea" id="message" cols="30" rows="10" required="required"
+              placeholder="お問い合わせ内容をご入力ください"></textarea>
           </div>
           <button type="submit" class="contact_btn">送信する</button>
         </form>
@@ -95,32 +105,38 @@
     </section>
   </main>
   <footer>
-    <div class="footer_logo">
-      <a href="index.html"><img src="../img/logo.png" alt="ロゴ画像"></a>
+    <div class="footer_all">
+      <div class="footer_logo">
+        <a href="../index.html">
+          <img src="../img2/logo.png" alt="ロゴ画像">
+          <p class="company_name">General Goods</p>
+        </a>
+      </div>
+      <div class="footer_sns">
+        <p class="footer_sns_ttl">SNS</p>
+        <div class="footer_sns_img">
+          <a href="#"><img src="../img/twitter.png" alt="Twitterアイコン"></a>
+          <a href="#"><img src="../img/Instagram.png" alt="instagramアイコン"></a>
+        </div>
+      </div>
+      <div class="footer_contents">
+        <ul>
+          <li><a href="#">商品詳細</a></li>
+          <li><a href="#">イベント</a></li>
+          <li><a href="#">お知らせ</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">ネットショッピング</a></li>
+          <li><a href="#">店舗情報</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">採用情報</a></li>
+        </ul>
+      </div>
+      <small class="footer_txt">©General Goods All Right Reserved.</small>
     </div>
-    <ul class="footer_list">
-      <li class="footer_item">
-        <a href="html/about.html">About</a>
-      </li>
-      <li class="footer_item">
-        <a href="html/feature.html">Feature</a>
-      </li>
-      <li class="footer_item">
-        <a href="html/service.html">Service</a>
-      </li>
-      <li class="footer_item">
-        <a href="html/contact.html">Contact</a>
-      </li>
-    </ul>
-    <ul class="footer_sns">
-      <li class="sns_icon1">
-        <a href="#"><img src="../img/twitter.png" alt="Twitterアイコン"></a>
-      </li>
-      <li class="sns_icon2">
-        <a href="#"><img src="../img/Instagram.png" alt="Instagramアイコン"></a>
-      </li>
-    </ul>
-    <small class="footer_txt">©CODESTAR All Right Reserved.</small>
   </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
